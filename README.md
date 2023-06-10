@@ -8,12 +8,8 @@ ________________________________________________________________________________
 
 About SkillStorm...
 
-![image](https://github.com/DJ322/SkillStorm/assets/72959116/8f5a15b0-934a-4241-994b-e432f0643e21)
 
-![image](https://github.com/DJ322/SkillStorm/assets/72959116/b57d7b7b-dc38-46ff-82da-2033858425e9)
+![image](https://github.com/DJ322/SkillStorm/assets/72959116/a5af0bd9-e854-42da-8080-75da152f69dc)
 
-![image](https://github.com/DJ322/SkillStorm/assets/72959116/3e18007c-cacd-4325-9b72-e7106444bbbf)
-
-![image](https://github.com/DJ322/SkillStorm/assets/72959116/3e5aa987-5963-4a2b-8db6-9675faec2b68)
-
-
+With the most comprehensive network of academic and military partnerships in the U.S., we are trusted to train tens of thousands of students and active service members each year in the latest enterprise technologies. This evergreen pipeline gives us unprecedented access to continually identify and hire top talent with the passion and potential to become elite technology professionals and further invest in custom training to meet our clients’ specific workforce needs.
+___________________________________________________________________________________________________
