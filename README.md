@@ -18,3 +18,12 @@ ________________________________________________________________________________
 
 SkillStorm has the most rigorous screening processes in the industry for technical and professional talent. Our time-tested methods and proven screening process help us identify exceptional talent with the technical aptitude, soft skills, and key attributes to thrive in our clients’ workplace.
 ___________________________________________________________________________________________________
+
+![image](https://github.com/DJ322/SkillStorm/assets/72959116/0f20f7d2-0bab-4b6e-8284-4b32d125d00e)
+
+Newly hired developers endure intensive, project-based training programs taught by expert engineers, creating custom-trained Stormers armed with industry certifications. Stormers seamlessly integrate with your team, hit the ground running and make meaningful contributions from day one.
+___________________________________________________________________________________________________
+![image](https://github.com/DJ322/SkillStorm/assets/72959116/c2e28f5e-4193-42c5-90b5-e7fed2494bbd)
+
+Specifically trained, industry certified, and battle-tested teams of Stormers are deployed at scale to the worlds leading companies to accelerate their digital transformation goals. We ensure our Stormers continue to perform at an elite level by offering unlimited access to the SkillStorm Accelerator Platform, our comprehensive suite of enterprise tech training, and industry certification courses.
+___________________________________________________________________________________________________
