@@ -1,4 +1,4 @@
-# SkillStorm
+# ![image](https://github.com/DJ322/SkillStorm/assets/72959116/10d7fbc1-61d5-4edc-9659-fcd27f9a4900)
 ![image](https://github.com/DJ322/SkillStorm/assets/72959116/10d7fbc1-61d5-4edc-9659-fcd27f9a4900)
 About SkillStorm
 ![image](https://github.com/DJ322/SkillStorm/assets/72959116/6172c6cf-c609-4cb4-ac40-268eccc85500)
