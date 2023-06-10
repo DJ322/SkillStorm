@@ -6,8 +6,6 @@ ________________________________________________________________________________
 
 
 
-
-
 ![image](https://github.com/DJ322/SkillStorm/assets/72959116/a5af0bd9-e854-42da-8080-75da152f69dc)
 
 With the most comprehensive network of academic and military partnerships in the U.S., we are trusted to train tens of thousands of students and active service members each year in the latest enterprise technologies. This evergreen pipeline gives us unprecedented access to continually identify and hire top talent with the passion and potential to become elite technology professionals and further invest in custom training to meet our clients’ specific workforce needs.
