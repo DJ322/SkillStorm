@@ -27,10 +27,10 @@ resource "aws_security_group" "alb_sg" {
 
   # Allow outgoing traffic to the web servers
   egress {
-    from_port   = 3306
-    to_port     = 3306
+    from_port   = 0
+    to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["x.x.x.x/x"] # Subnet CIDR blocks
+    cidr_blocks = ["0.0.0.0/0"] # Subnet CIDR blocks
   }
 }
 
