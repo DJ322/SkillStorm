@@ -6,7 +6,6 @@ ________________________________________________________________________________
 
 
 
-About SkillStorm...
 
 
 ![image](https://github.com/DJ322/SkillStorm/assets/72959116/a5af0bd9-e854-42da-8080-75da152f69dc)
