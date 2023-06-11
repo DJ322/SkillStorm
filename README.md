@@ -10,8 +10,15 @@ ________________________________________________________________________________
  [![General badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
  [![General badge](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
  [![General badge](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+ [![General badge](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+ [![General badge](https://img.shields.io/badge/Powershell-2CA5E0?style=for-the-badge&logo=powershell&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+ [![General badge](https://img.shields.io/badge/VIM-%2311AB00.svg?&style=for-the-badge&logo=vim&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+ [![General badge](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+ [![General badge](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
 
 
+
+ https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white
 ___________________________________________________________________________________________________
 
 
