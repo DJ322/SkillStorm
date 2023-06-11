@@ -8,7 +8,7 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________________
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![General badge](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
 ![General badge](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
 ![General badge](https://img.shields.io/badge/Powershell-2CA5E0?style=for-the-badge&logo=powershell&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
