@@ -16,8 +16,8 @@ ________________________________________________________________________________
  [![General badge](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
  [![General badge](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
  [![General badge](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
- ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
- ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+ ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)]
+ ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)]
 
 
 
