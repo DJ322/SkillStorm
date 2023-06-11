@@ -18,5 +18,5 @@ ________________________________________________________________________________
 [![Vagrant](https://img.shields.io/badge/vagrant-%231563FF.svg?style=for-the-badge&logo=vagrant&logoColor=white)](https://github.com/hashicorp/vagrant)
 [![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
 ___________________________________________________________________________________________________
-
+...
 
