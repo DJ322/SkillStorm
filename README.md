@@ -3,7 +3,6 @@
 
 ![image](https://github.com/DJ322/SkillStorm/assets/72959116/c27b5de2-6705-4fea-966a-5c619a3d06be)
 ___________________________________________________________________________________________________
-Languages
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
