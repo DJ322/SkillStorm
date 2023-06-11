@@ -17,7 +17,7 @@ ________________________________________________________________________________
  [![General badge](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
  [![General badge](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
 ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white)
- ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white/<SUBJECT>-<STATUS>-<COLOR>.svg)]
+![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white)
 
 
 
