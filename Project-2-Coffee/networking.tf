@@ -3,7 +3,7 @@
 # This file is designed only as a representation of the architecture used #
 ### !!! Thank You !!! ###
 
-# Create Main VPC 
+# Main VPC for Project 2 "Coffee"  
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
   tags = {
@@ -11,7 +11,7 @@ resource "aws_vpc" "main" {
   }
 }
 # Primary Public Subnet Group
-# Create Public East-1a Subnet
+# Public East-1a Subnet
 resource "aws_subnet" "pub_sbnet_nat_1a" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.1.0/24"
@@ -20,7 +20,7 @@ resource "aws_subnet" "pub_sbnet_nat_1a" {
     Name = "Coffee-Public-1a"
   }
 }
-# Create Public East-1b Subnet
+# Public East-1b Subnet
 resource "aws_subnet" "pub_sbnet_nat_1b" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.2.0/24"
@@ -30,7 +30,7 @@ resource "aws_subnet" "pub_sbnet_nat_1b" {
   }
 }
 # EC2 Private Subnet Groups 
-# Create Private East-1a Subnet for EC2
+# Private East-1a Subnet for EC2
 resource "aws_subnet" "pvt_sbnet_ec2_1a" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.3.0/24"
@@ -39,7 +39,7 @@ resource "aws_subnet" "pvt_sbnet_ec2_1a" {
     Name = "Coffee-EC2-Private-1a"
   }
 }
-# Create Private East-1a Subnet for EC2
+# Private East-1a Subnet for EC2
 resource "aws_subnet" "pvt_sbnet_ec2_1b" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.4.0/24"
@@ -49,7 +49,7 @@ resource "aws_subnet" "pvt_sbnet_ec2_1b" {
   }
 }
 # RDS Database Private Subnet Group
-# Create Private East-1a Subnet for RDS
+# Private East-1a Subnet for RDS
 resource "aws_subnet" "pvt_sbnet_rds_1a" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.5.0/24"
@@ -58,7 +58,7 @@ resource "aws_subnet" "pvt_sbnet_rds_1a" {
     Name = "Coffee2-RDS"
   }
 }
-# Create Private East-1b Subnet for RDS
+# Private East-1b Subnet for RDS
 resource "aws_subnet" "pvt_sbnet_rds_1b" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.6.0/24"
@@ -69,13 +69,13 @@ resource "aws_subnet" "pvt_sbnet_rds_1b" {
 
 }
 # IGW is needed for public access
-# Create an Internet Gateway
+# Internet Gateway
 resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.main.id
 }
 
 # Public and Private Route Tables
-# Create a public route table
+# Public route table
 resource "aws_route_table" "public_route_table" {
   vpc_id = aws_vpc.main.id
 
@@ -135,7 +135,7 @@ resource "aws_route_table_association" "pvt_sbnet_rds_1b_association" {
 }
 
 # Network Address Translation for Public Subnet
-# Create a NAT Gateway
+# NAT Gateway
 resource "aws_nat_gateway" "nat_gateway" {
   allocation_id = aws_eip.nat_eip.id
   subnet_id     = aws_subnet.pub_sbnet_nat_1a.id
@@ -146,7 +146,7 @@ resource "aws_nat_gateway" "nat_gateway" {
 }
 
 # Elastic IP address for NAT Gatway
-# Create an EIP for the NAT Gateway
+# EIP for the NAT Gateway
 resource "aws_eip" "nat_eip" {
   vpc = true
   tags = {
@@ -154,29 +154,28 @@ resource "aws_eip" "nat_eip" {
   }
 }
 
-# Create a route in the private route table for the NAT Gateway
+# Route in the private route table for the NAT Gateway
 resource "aws_route" "private_route" {
   route_table_id         = aws_route_table.private_route_table.id
   destination_cidr_block = "0.0.0.0/0"
   nat_gateway_id         = aws_nat_gateway.nat_gateway.id
 }
 
-# Create a route in the private route table for the RDS subnets
+# Route in the private route table for the RDS subnets
 resource "aws_route" "private_to_rds_route1" {
   route_table_id         = aws_route_table.private_route_table.id
   destination_cidr_block = aws_subnet.subnet5.cidr_block
   nat_gateway_id         = aws_nat_gateway.nat_gateway.id
 }
 
-# Create a route in the private route table for the RDS subnets
+# Route in the private route table for the RDS subnets
 resource "aws_route" "private_to_rds_route2" {
   route_table_id         = aws_route_table.private_route_table.id
   destination_cidr_block = aws_subnet.subnet6.cidr_block
   nat_gateway_id         = aws_nat_gateway.nat_gateway.id
 }
 
-# End Points for SSM are needed for connections
-# Create a route in the private route table for the RDS subnets
+# Route in the private route table for the RDS subnets
 resource "aws_vpc_endpoint" "ssm" {
   vpc_id            = aws_vpc.main.id
   service_name      = "com.amazonaws.us-east-1.ssm"
