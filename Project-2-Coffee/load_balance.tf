@@ -3,7 +3,7 @@
 # This file is designed only as a representation of the architecture used #
 ### !!! Thank You !!! ###
 
-# Create a security group for the ALB
+# Security group for the ALB
 resource "aws_security_group" "alb_sg" {
   name        = "coffee_alb_sg"
   description = "ALB security group"
@@ -34,19 +34,19 @@ resource "aws_security_group" "alb_sg" {
   }
 }
 
-# Create an Application Load Balancer (ALB)
+# Application Load Balancer (ALB) for public subnet east 1a & east 1b
 resource "aws_lb" "alb" {
   name               = "coffee-web-alb"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.alb_sg.id]
-  subnets            = [aws_subnet.subnet1.id, aws_subnet.subnet2.id]
+  subnets            = [aws_subnet.pub_sbnet_nat_1a.id, aws_subnet.pub_sbnet_nat_1b.id]
 }
 
-# Create a target group for the ALB
+# Target group for the load balancer on port 80
 resource "aws_lb_target_group" "target_group" {
   name        = "coffee-web-target-group"
-  port        = 443
+  port        = 80
   protocol    = "HTTPS"
   target_type = "instance"
   vpc_id      = aws_vpc.main.id
@@ -61,9 +61,10 @@ resource "aws_lb_target_group" "target_group" {
     unhealthy_threshold = 3
   }
 }
+# Listener port 80 to app load balancer
 resource "aws_lb_listener" "alb_listener" {
   load_balancer_arn = aws_lb.alb.arn
-  port              = 443
+  port              = 80
   protocol          = "HTTPS"
 
   default_action {
@@ -72,7 +73,7 @@ resource "aws_lb_listener" "alb_listener" {
   }
 }
 
-# Output the ALB DNS name
+# This outputs the alb DNS name
 output "alb_dns_name" {
   value = aws_lb.alb.dns_name
 }
