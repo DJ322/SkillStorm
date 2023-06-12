@@ -9,7 +9,7 @@ resource "aws_autoscaling_group" "asg" {
   min_size            = 2
   max_size            = 4
   desired_capacity    = 2
-  vpc_zone_identifier = [aws_subnet.subnet3.id, aws_subnet.subnet4.id]
+  vpc_zone_identifier = [aws_subnet.pvt_sbnet_ec2_1a.id, aws_subnet.pvt_sbnet_ec2_1b.id]
   target_group_arns   = [aws_lb_target_group.target_group.arn]
   launch_template {
     id      = aws_launch_template.web_lt.id
@@ -39,8 +39,8 @@ chown -R www-data:www-data /var/www/html/
 chmod -R 755 /var/www/html/wordpress
 cp /var/www/html/wordpress/wp-config-sample.php /var/www/html/wordpress/wp-config.php
 sed -i "s/database_name_here/wordpress/g" /var/www/html/wordpress/wp-config.php
-sed -i "s/$$$$_here/$$$$/g" /var/www/html/wordpress/wp-config.php
-sed -i "s/$$$$_here/$$$$/g" /var/www/html/wordpress/wp-config.php
+sed -i "s/username_here/admin/g" /var/www/html/wordpress/wp-config.php
+sed -i "s/password_here/12345678/g" /var/www/html/wordpress/wp-config.php
 sed -i "s/localhost/${aws_rds_cluster.rds_cluster.endpoint}/g" /var/www/html/wordpress/wp-config.php
 systemctl restart apache2
 EOF
@@ -48,26 +48,31 @@ EOF
 }
 
 # Security Goup chaining for high security
-# Create a security group for the web servers
+# Security group for the web servers
 resource "aws_security_group" "web_sg" {
   name        = "coffee_web_sg"
   description = "Web server security group"
 
   vpc_id = aws_vpc.main.id
 
-  # Allow incoming HTTPS traffic
+  # Incoming HTTPS traffic rules
   ingress {
-    from_port   = 443
-    to_port     = 443
+    from_port   = 80
+    to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["x.x.x.x/x"] # Replace with the CIDR block of the RDS database subnet
   }
 
-  # Allow outgoing traffic to the RDS database
+#######  Caution #######  Caution #######  Caution ####### 
+# The databse is currently set to "wide open" # 
+# These must be changed to MySQL port number and subnets only # 
+#######  Caution #######  Caution #######  Caution ####### 
+  
+  # Outgoing traffic to the RDS database rules
   egress {
-    from_port   = 443
-    to_port     = 443
-    protocol    = "3306" # MySQL Protocal 
-    cidr_blocks = ["x.x.x.x/x"] # Replace with the CIDR block of the RDS database subnet
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1" # MySQL Protocal 
+    cidr_blocks = ["0.0.0.0/0"] # Replace with the CIDR block of the RDS database subnet
   }
 }
