@@ -18,5 +18,5 @@ ________________________________________________________________________________
 ...
 
 
-[![](https://komarev.com/ghpvc/?username=dj322&color=green)](about:)
+[![](https://komarev.com/ghpvc/?username=dj322&color=green)](www.google.com)
 
