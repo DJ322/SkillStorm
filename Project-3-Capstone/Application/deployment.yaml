@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rocky-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rockyapp
+  template:
+    metadata:
+      labels:
+        app: rockyapp
+    spec:
+      containers:
+        - name: rocky-container
+          image: dj322/rockyhtml
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
