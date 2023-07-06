@@ -1,10 +1,18 @@
 pipeline {
     agent any
+   
     stages {
+        
+        stage('Terraform Init') {
+            steps {
+                // Initialize Terraform and download providers
+                sh 'terraform init -migrate-state'
+            }
+        }
+
         stage('Terraform Apply') {
             steps {
-                // Apply the changes using Terraform
-                sh 'terraform apply -auto-approve'
+                        sh 'terraform apply -auto-approve'
             }
         }
     }
