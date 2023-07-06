@@ -1,3 +1,5 @@
+# Terraform State File #
+# Private S3 storage #
 terraform {
   backend "s3" {
     bucket = "rocky-terraform"
@@ -28,3 +30,4 @@ provider "aws" {
   # profile = "skillstorm"
   region  = "us-east-1"
 }
+
