@@ -22,4 +22,3 @@ variable "private_subnet_count" {
   description = "subnet count for private subnets"
   type        = number
 }
-
