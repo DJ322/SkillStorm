@@ -1,6 +1,6 @@
 # This module covers addtional resources please review it here #
 # https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest
-# https://github.com/terraform-aws-modules/terraform-aws-eks
+# https://github.com/terraform-aws-modules/terraform-aws-eks #
 
 
 module "eks" {
