@@ -15,7 +15,7 @@ ________________________________________________________________________________
 [![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white)](https://github.com/ansible/ansible)
 [![Vagrant](https://img.shields.io/badge/vagrant-%231563FF.svg?style=for-the-badge&logo=vagrant&logoColor=white)](https://github.com/hashicorp/vagrant)
 ___________________________________________________________________________________________________
-This repository is a collection of projects completed during the program.
+This repository is a collection of projects from SkillStorm.
 
 
 ![](https://komarev.com/ghpvc/?username=dj322&color=green)
